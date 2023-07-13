@@ -8,7 +8,7 @@ clear.addEventListener("click", function () {
     location.reload();
 });
 
-var allScores = localStorage.getItem("allScores");
+var allScores = localStorage.getItem("totalScores");
 allScores = JSON.parse(allScores);
 
 if (allScores !== null) {
@@ -18,10 +18,6 @@ if (allScores !== null) {
         var createLi = document.createElement("li");
         createLi.textContent = allScores[i].initials + " " + allScores[i].score;
         highScore.appendChild(createLi);
-        alert(allScores[i].initials + " " + allScores[i].score);
-        //highScore.appendChild(createLi);
-        //alert())
-       
 
     }
 }
